@@ -1,0 +1,38 @@
+
+<!-- include header -->
+    <%- include('include/_header')%>
+<!-- include header -->
+
+  <!-- Main Section -->
+  <main class="site-main">
+    <div class="container">
+      <div class="box-nav d-flex justify-between">
+        <a href="/add-user" class="border-shadow">
+          <span class="text-gradient">New User &nbsp <i class="fas fa-user"></i></span>
+        </a>
+      </div>
+      <!-- form handling -->
+      <form action="/" method="POST">
+        <table class="table table-sortable">
+          <thead class="thead-dark">
+            <tr>
+              <th data-sort-type="numeric" class="sort_item">ID &nbsp<i class="fas fa-sort anchor"></i></th>
+              <th data-sort-type="text" class="sort_item">Name &nbsp<i class="fas fa-sort anchor"></i></th>
+              <th>@Email</th>
+              <th data-sort-type="text" class="sort_item">Gender &nbsp<i class="fas fa-sort anchor"></i></th>
+              <th data-sort-type="text" class="sort_item">Status &nbsp<i class="fas fa-sort anchor"></i></th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <%- include('include/_show')%>
+          </tbody>
+        </table>
+      </form>
+    </div>
+  </main>
+  <!-- Main Section -->
+
+<!-- include footer -->
+<%- include('include/_footer')%>
+<!-- include footer -->
